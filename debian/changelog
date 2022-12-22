@@ -1,0 +1,119 @@
+node-strip-json-comments (4.0.0-4) unstable; urgency=medium
+
+  * Team upload
+  * Improve 4.0.0-3 changes: export both ESM and CommonJS files
+
+ -- Yadd <yadd@debian.org>  Sun, 12 Sep 2021 18:18:28 +0200
+
+node-strip-json-comments (4.0.0-3) unstable; urgency=medium
+
+  * Team upload
+  * Use dh-sequence-nodejs
+  * Build commonjs file, set it in "main" field and remove 'type: module'
+    (Closes: #994137)
+
+ -- Yadd <yadd@debian.org>  Sun, 12 Sep 2021 18:03:44 +0200
+
+node-strip-json-comments (4.0.0-2) unstable; urgency=medium
+
+  * Drop the patch to stay require-able (Closes: #993167).
+
+ -- Julien Puydt <jpuydt@debian.org>  Sat, 28 Aug 2021 17:06:44 +0200
+
+node-strip-json-comments (4.0.0-1) unstable; urgency=medium
+
+  * Fix d/watch.
+  * Bump std-vers to 4.6.0.
+  * New upstream release.
+  * Refresh patch.
+  * Add a patch to stay require-able (don't break deps).
+
+ -- Julien Puydt <jpuydt@debian.org>  Thu, 26 Aug 2021 06:15:51 +0200
+
+node-strip-json-comments (3.1.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update team mailing list address.
+  * Declare d/rules doesn't require root.
+  * Bump dh-compat to 13.
+
+ -- Julien Puydt <jpuydt@debian.org>  Thu, 16 Jul 2020 09:56:30 +0200
+
+node-strip-json-comments (3.1.0-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+  * Update standards version to 4.4.1, no changes needed.
+
+  [ Julien Puydt ]
+  * New upstream release.
+  * Bump std-vers to 4.5.0.
+
+ -- Julien Puydt <jpuydt@debian.org>  Sat, 18 Apr 2020 18:42:46 +0200
+
+node-strip-json-comments (3.0.1-3) unstable; urgency=medium
+
+  * Team upload
+  * Switch install to pkg-js-tools
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 03 Aug 2019 15:44:07 +0200
+
+node-strip-json-comments (3.0.1-2) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.0
+  * Move installed files to /usr/share/nodejs
+  * Add upstream/metadata
+  * Enable test using pkg-js-tools and a patch to switch ava to tap
+  * Fix debian/copyright
+  * Fix install
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 24 Jul 2019 14:33:51 +0200
+
+node-strip-json-comments (3.0.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump std-ver to 4.3.0.
+  * Mark the package M-A: foreign following hinter.
+  * Ship the typescript definitions.
+
+ -- Julien Puydt <jpuydt@debian.org>  Fri, 03 May 2019 16:38:59 +0200
+
+node-strip-json-comments (2.0.1-2) unstable; urgency=medium
+
+  * Refresh packaging:
+    - Remove unnecessary testsuite autopkgtest field.
+    - Use my debian.org mail address.
+    - Move to section javascript.
+    - Change priority from extra to optional.
+    - Point Vcs-* fields to salsa.
+    - Bump d/watch to version 4.
+    - Bump dh compat to 11.
+    - Bump std-ver to 4.1.5.
+
+ -- Julien Puydt <jpuydt@debian.org>  Tue, 07 Aug 2018 16:09:33 +0200
+
+node-strip-json-comments (2.0.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fix Vcs-* fields.
+  * Bump standards-version up.
+  * Remove the manpage and the rules to install the command-line tool.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Sat, 14 May 2016 08:49:19 +0200
+
+node-strip-json-comments (1.0.4-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Thu, 01 Oct 2015 17:51:03 +0200
+
+node-strip-json-comments (1.0.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #789692)
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Tue, 23 Jun 2015 18:57:00 +0200

@@ -1,0 +1,8 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	babeljs -o index.cjs index.js
+	perl -i -pe 's/^export default/module.exports =/' index.cjs
